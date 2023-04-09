@@ -6,7 +6,7 @@ public class ChatDependency {
 	public synchronized void question(String msg) {
 	      if (flag) {
 	         try {
-	        	System.out.println("Question Wait");
+//	        	System.out.println("Question Wait");
 	            wait();
 	         } catch (InterruptedException e) {
 	            e.printStackTrace();
@@ -20,7 +20,7 @@ public class ChatDependency {
 	public synchronized void answer(String msg) {
 	      if (!flag) {
 	         try {
-	        	 System.out.println("Answer Wait");
+//	        	 System.out.println("Answer Wait");
 	            wait();
 	         } catch (InterruptedException e) {
 	            e.printStackTrace();
